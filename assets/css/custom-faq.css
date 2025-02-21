@@ -1,0 +1,104 @@
+.faq-section {
+    background: #fdfdfd;
+    min-height: 100vh;
+}
+.faq-title h3 {
+    position: relative;
+    margin-bottom: 45px;
+    display: inline-block;
+    font-weight: 600;
+    line-height: 1;
+    margin: 40px 20px;
+}
+.faq-title h3::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 60px;
+    height: 4px;
+    background: #E91E63;
+    bottom: -25px;
+    margin-left: -30px;
+}
+.faq {
+    background: #FFFFFF;
+    box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
+}
+.faq .card {
+    border: none;
+    background: none;
+    border-bottom: 1px dashed #CEE1F8;
+}
+.faq .card .card-header {
+    padding: 0px;
+    border: none;
+    background: none;
+    transition: all 0.3s ease 0s;
+}
+.faq .card .card-header:hover {
+    background: rgba(233, 30, 99, 0.1);
+    padding-left: 10px;
+}
+
+.faq h5 {
+    margin: 0;
+    font-size: 1.1rem !important;
+}
+
+
+.faq .card .card-header .faq-title {
+    width: 100%;
+    text-align: left;
+    padding: 0px 30px;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-decoration: none !important;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.faq .card .card-header .faq-title .badge {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 14px;
+    float: left;
+    border-radius: 100px;
+    text-align: center;
+    background: #8224e3;
+    color: #fff;
+    font-size: 12px;
+    margin-right: 20px;
+}
+.faq .card .card-body {
+    padding: 30px 35px 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    border-top: 1px solid #F3F8FF;
+}
+
+/* New CSS to handle collapse behavior */
+.collapse {
+    display: none;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.collapse.show {
+    display: block;
+}
+
+@media (max-width: 991px) {
+    .faq {
+        margin-bottom: 30px;
+    }
+    .faq .card .card-header .faq-title {
+        line-height: 26px;
+        margin-top: 10px;
+    }
+}
